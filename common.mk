@@ -47,7 +47,3 @@ PRODUCT_PACKAGES += \
 # Variant linking script
 PRODUCT_COPY_FILES += \
 $(LOCAL_PATH)/releasetools/variant_script.sh:install/bin/variant_script.sh
-
-
-$(call inherit-product-if-exists, vendor/htc/melsuhl-common/melsuhl-common-vendor.mk)
-
