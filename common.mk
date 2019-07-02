@@ -14,8 +14,6 @@
 # limitations under the License.
 #
 
-$(call inherit-product-if-exists, vendor/htc/melsuhl-common/melsuhl-common-vendor.mk)
-
 # Inherit from msm8974-common
 $(call inherit-product, device/htc/msm8974-common/msm8974-common.mk)
 
@@ -49,3 +47,7 @@ PRODUCT_PACKAGES += \
 # Variant linking script
 PRODUCT_COPY_FILES += \
 $(LOCAL_PATH)/releasetools/variant_script.sh:install/bin/variant_script.sh
+
+
+$(call inherit-product-if-exists, vendor/htc/melsuhl-common/melsuhl-common-vendor.mk)
+
